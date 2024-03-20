@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.1s ease-in-out;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-color: lightgray;
+}
+
+.quiz-area {
+  height: 70vh;
+  width: 35vw;
+  border: 1px solid black;
+  background-color: lightgoldenrodyellow;
+  border-radius: 1rem;
+  
+}
+
+.question-area {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  font-style: italic;
+  gap: 1.5rem;
+  background-color: lightsalmon;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.question-area p {
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+.options-area {
+  height: 40vh;
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+}
+
+.options {
+  height: 10vh;
+  width: 12vw;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: lightcyan;
+}
+
+.btns {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: lightskyblue;
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.btn {
+  height: 7vh;
+  width: 10vw;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.verdict {
+  height: 5vh;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:1269px) {
+    .quiz-area {
+        width: 45vw;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    
+    
+    .quiz-area {
+        width: 45vw;
+    }
+
+    .question-area p {
+        font-size: 1.2rem;
+    }
+}
+
